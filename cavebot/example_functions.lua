@@ -106,3 +106,26 @@ g_game.safeLogout()
 delay(1000)
 return "retry"
 ]])
+
+addExampleFunction("TurnOff Cavebot", [[
+CaveBot.setOff()
+delay(1000)
+return "retry"
+]])
+
+addExampleFunction("TurnOff Cavebot", [[
+CaveBot.setOn()
+delay(1000)
+return "retry"
+]])
+
+addExampleFunction("Check for Skill Distance then gotolabel", [[
+  --Club = 1,Sword = 2,Axe = 3,Distance = 4,Shielding = 5,
+if player:getSkillLevel(4) < 60 then CaveBot.gotoLabel("keepSkill") return false else return true end
+]])
+
+addExampleFunction("Check for Skill Distance then gotolabel", [[
+local lvlToLeave = 55
+local labelToStartHunt = "Hunt"
+if lvl() < lvlToLeave then CaveBot.gotoLabel(labelToStartHunt) return false else return true end
+]])

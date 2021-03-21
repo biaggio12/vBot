@@ -20,6 +20,7 @@ dofile("/cavebot/walking.lua")
 -- in this section you can add extensions, check extension_template.lua
 --dofile("/cavebot/extension_template.lua")
 dofile("/cavebot/sell_all.lua")
+dofile("/cavebot/middle_supply_check.lua")
 dofile("/cavebot/depositor.lua")
 dofile("/cavebot/buy_supplies.lua")
 dofile("/cavebot/d_withdraw.lua")
