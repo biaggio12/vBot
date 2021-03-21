@@ -73,6 +73,6 @@ CaveBot.Extensions.MiddleCheck.setup = function()
  CaveBot.Editor.registerAction("middlecheck", "middle check", {
    value="Continue Label, Leave Label",
    title="Middle Supply check label",
-   description="Insert here hunt leave label",
+   description="Insert here continue hunt label, leave hunt label",
  })  
 end
